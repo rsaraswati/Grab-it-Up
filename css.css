@@ -3,10 +3,10 @@
 -------------------------------------*/
 header
 {
-    background-color: #333333;
-    height: 40px;
-    width: 100%; 
-    list-style-type: none;
+  background-color: #333333;
+  height: 40px;
+  width: 100%; 
+  list-style-type: none;
 	color: #ffffff;
 	font-family: Proxima Nova;
 	font-size: 16px;
@@ -18,7 +18,7 @@ header
 #pageheader li
 {
 	padding: 10px 0px 0px 0px;
-    float: left;
+  float: left;
 	padding-left: 2cm;
 }
 #pageheader a
@@ -34,7 +34,7 @@ header
 }
 a:hover 
 {
-   	color: #B9B9B9 !important;
+  color: #B9B9B9 !important;
 }
 
 /*-----------------------------------
@@ -108,10 +108,10 @@ figure#slideshow img:first-child
 -------------------------------------*/
 footer 
 {
-    background-color: #F3F3F3;
-    height: 80px;
-    width: 100%; 
-    list-style-type: none;
+  background-color: #F3F3F3;
+  height: 80px;
+  width: 100%; 
+  list-style-type: none;
 	color: #333333;
 	font-family: Proxima Nova;
 	font-size: 16px;
@@ -119,4 +119,143 @@ footer
 	font-weight: lighter;
 	width: 100%;
 	position: relative;
+}
+
+/*-----------------------------------
+    Product List
+-------------------------------------*/
+body 
+{
+  margin: 0;
+}
+a 
+{
+  color: #333333;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:visited 
+{
+  text-decoration: underline;
+}
+*
+{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body 
+{
+  font-size: 14px;
+  background-color: #ffffff;
+}
+figure 
+{
+  margin: 0;
+}
+img 
+{
+  vertical-align: middle;
+}
+.img-rounded {
+  border-radius: 10px;
+}
+.img-thumbnail 
+{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.container 
+{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) 
+{
+  .container 
+  {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) 
+{
+  .container 
+  {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) 
+{
+  .container 
+  {
+    width: 1170px;
+  }
+}
+.container-fluid 
+{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#bootstrap
+{  
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+}
+table 
+{
+  background-color: transparent;
+}
+caption 
+{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777;
+  text-align: left;
+}
+th 
+{
+  text-align: left;
+}
+.table 
+{
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.thumbnail 
+{
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 2;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.thumbnail .caption 
+{
+  padding: 9px;
+  color: #333;
+}
+.category 
+{
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
