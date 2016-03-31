@@ -35,3 +35,46 @@ CREATE TABLE `productdeal` (
   FOREIGN KEY (Product_Code) 
         REFERENCES product(Product_Code)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `user_cart` (
+ `User_Id` varchar(8) NOT NULL,
+ `Product_Code` varchar(24) NOT NULL,
+ `Quantity` int(11) NOT NULL,
+ `Date_Added` date DEFAULT NULL,
+ PRIMARY KEY (`User_Id`,`Product_Code`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `order_history` (
+ `Order_Id` int(11) NOT NULL AUTO_INCREMENT,
+ `User_Id` varchar(8) NOT NULL,
+ `Order_Date` date NOT NULL,
+ `Payment_Status` varchar(10) DEFAULT NULL,
+ `Invoice_Status` varchar(10) DEFAULT NULL,
+ `Shipping_Status` varchar(10) DEFAULT NULL,
+ `Promo_Code` varchar(8) DEFAULT NULL,
+ `Addr_Line1` varchar(40) NOT NULL,
+ `Addr_Line2` varchar(20) DEFAULT NULL,
+ `City` varchar(20) NOT NULL,
+ `State` varchar(30) NOT NULL,
+ `ZipCode` varchar(5) NOT NULL,
+ `Sale_Price` decimal(15,2) NOT NULL,
+ `Final_Price` decimal(15,2) NOT NULL,
+ PRIMARY KEY (`Order_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `order_detail` (
+ `Order_Id` int(11) NOT NULL,
+ `Product_Code` varchar(24) NOT NULL,
+ `Quantity` int(11) NOT NULL,
+ `Item_Price` decimal(15,2) NOT NULL,
+ `Total_Price` decimal(15,2) NOT NULL,
+ PRIMARY KEY (`Order_Id`,`Product_Code`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `promo_details` (
+ `Promo_Code` varchar(8) NOT NULL,
+ `Status` varchar(10) NOT NULL,
+ `Promo_Amount` decimal(15,2) DEFAULT NULL,
+ `Promo_Percentage` decimal(10,0) DEFAULT NULL,
+ PRIMARY KEY (`Promo_Code`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
