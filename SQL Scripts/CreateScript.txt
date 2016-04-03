@@ -14,7 +14,7 @@ CREATE TABLE `user` (
 CREATE TABLE `product` (
  `Product_Code` varchar(24) NOT NULL,
  `Name` varchar(50) NOT NULL,
- `Description` varchar(300) NOT NULL,
+ `Description` varchar(3000) NOT NULL,
  `ImageURL` varchar(50) DEFAULT NULL,
  `List_Price` decimal(15,2) DEFAULT NULL,
  `Sale_Price` decimal(15,2) DEFAULT NULL,

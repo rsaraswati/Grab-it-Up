@@ -8,20 +8,7 @@
     <title>Grab it Up</title>
   <body>
 <!--Header-->
-   <header>
-      <ul id="pageheader">
-        <li><a href="">Logo</a></li>
-        <li><a href="">Phone</a></li>
-        <li><a href="">Computer</a></li>
-        <li><a href="">Notebook</a></li>
-        <li><a href="">Watch</a></li>
-        <li><a href="">TV</a></li>
-        <li><a href="">Accessories</a></li>
-        <li><a href=""><img src="img/home/user.png"></a></li>
-        <li><a href=""><img src="img/home/search.png"></a></li>
-        <li><a href=""><img src="img/home/bag.png"></a></li>
-      </ul>
-    </header>
+<?php include 'menu.php';?>
 
 <!--Image slideshow-->
     <div id="slideshow-container">
@@ -43,10 +30,7 @@
       <img src="img/thumb/thumb3.png" alt="">
       <img src="img/thumb/thumb4.png" alt="">
     </div>
+    <!--Footer-->
+    <?php include 'footer.php';?>
   </body>
-
-<!--Footer-->
-  <footer><br/><br/>
-      <center>Grab it up! </center>
-  </footer>
 </html>
