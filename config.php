@@ -1,5 +1,5 @@
 <?php
-define('DBHOST', 'localhost:8889');
+define('DBHOST', 'localhost');
 define('DBUSER', 'root');
 define('DBPASS', 'root');
 define('DBNAME', 'test');
