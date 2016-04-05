@@ -4,7 +4,7 @@
 header
 {
   background-color: #333333;
-  height: 40px;
+  height: 60px;
   width: 100%;   
 	color: #ffffff;
 	font-family: Proxima Nova;
@@ -13,6 +13,7 @@ header
 	font-weight: lighter;
 	width: 100%;
 	position: relative;
+  text-align: center;
  }
 #pageheader
 {
@@ -21,9 +22,9 @@ header
 }
 #pageheader li
 {
-	padding: 10px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
   float: left;
-	padding-left: 2cm;
+	padding-left: 90px;
 }
 #pageheader a
 {
@@ -32,13 +33,32 @@ header
 }
 #pageheader a img
 {
-	width: 20px;
-	height: 20px;
 
 }
 a:hover 
 {
   color: #B9B9B9 !important;
+}
+.search 
+{ 
+  background-color: #333333;
+  -moz-border-radius:10px; 
+  -webkit-border-radius:10px; 
+  border-color: #333333;
+  width: 150px;
+  height: 25px;
+}
+.searchtab 
+{ 
+  position: relative; 
+  width:150px;
+  padding-bottom: 10px; 
+}
+.searchtab img 
+{ 
+  position: absolute; 
+  top: 2px; 
+  right: 5px ;
 }
 
 /*-----------------------------------
@@ -80,11 +100,11 @@ figure#slideshow img:first-child
 }
 #thumb img 
 {
-    width: 24%;
-    height: 200px;
+    width: 49%;
+    height: 400px;
     overflow: hidden;
     text-align: center;
-    padding: 0px 4px 0px 4px;
+    padding-left: 25px;
 }
 #thumb img 
 {
@@ -105,24 +125,6 @@ figure#slideshow img:first-child
 {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
-}
-
-/*-----------------------------------
-		Footer
--------------------------------------*/
-footer 
-{
-  background-color: #F3F3F3;
-  height: 80px;
-  width: 100%; 
-  list-style-type: none;
-	color: #333333;
-	font-family: Proxima Nova;
-	font-size: 16px;
-	font-variant: normal;
-	font-weight: lighter;
-	width: 100%;
-	position: relative;
 }
 
 /*-----------------------------------
@@ -265,8 +267,44 @@ th
   background-color: #fff;
   border: 1px solid #ddd;
 }
-
 .clear
 {
     clear: both;
+}
+
+/*-----------------------------------
+    Footer
+-------------------------------------*/
+footer 
+{
+  background-color: #F3F3F3;
+  height: 140px;
+  width: 100%;
+  color: #000000;
+  list-style-type: none;
+  font-family: Proxima Nova;
+  font-size: 20px;
+  font-variant: normal;
+  font-weight: lighter;
+  position: relative;
+}
+#pagefooter
+{
+  margin: 0px;
+  list-style-type: none;
+}
+#pagefooter li
+{
+  padding: 10px 0px 0px 0px;
+  float: left;
+  padding-left: 175px;
+  font-size: 14px;
+}
+#pagefooter a
+{
+    color: #000000;
+}
+a:hover 
+{
+  color: #B9B9B9 !important;
 }

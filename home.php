@@ -25,10 +25,8 @@
 
 <!--Home Screen thumbnail images for other pages-->
     <div id="thumb">
-      <img src="img/thumb/thumb1.png" alt="">
-      <img src="img/thumb/thumb2.png" alt="">
-      <img src="img/thumb/thumb3.png" alt="">
-      <img src="img/thumb/thumb4.png" alt="">
+      <img src="img/thumb/thumb6.png" alt="">
+      <img src="img/thumb/thumb7.png" alt="">
     </div>
     <!--Footer-->
     <?php include 'footer.php';?>
