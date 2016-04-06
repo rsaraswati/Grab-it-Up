@@ -34,11 +34,12 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <a href="#"><?php echo $row['Name']; ?></a>
+                                <button class="cartbutton">
+                                <img src="img/thumb/cart.png"/>
+                                <div id="price">$<?php echo $row['Sale_Price']; ?></div>
+                                </button>
                             </div>
-                            <div id="price">
-                                <span>List Price: $<?php echo $row['List_Price']; ?></span>
-                                <span>List Price: $<?php echo $row['Sale_Price']; ?></span>                                
-                            </div>
+                                <span>List Price: <div id="price1">$<?php echo $row['List_Price']; ?></div></span>
                         </div>
                     </div>
                 <?php }
